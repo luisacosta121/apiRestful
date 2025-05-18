@@ -1,0 +1,38 @@
+[
+	{
+		"nombre": "LECHUGA",
+		"precio": "10",
+		"stock": "2",
+		"id": "1"
+	},
+	{
+		"nombre": "PAPA",
+		"precio": "3",
+		"stock": "99",
+		"id": "2"
+	},
+	{
+		"nombre": "AVION",
+		"precio": "55",
+		"stock": "4",
+		"id": "3"
+	},
+	{
+		"nombre": "CAMION",
+		"precio": "55",
+		"stock": "4",
+		"id": "4"
+	},
+	{
+		"nombre": "SANDIA",
+		"precio": "55",
+		"stock": "4",
+		"id": "5"
+	},
+	{
+		"nombre": "HELICOPTERO",
+		"precio": "333",
+		"stock": "89",
+		"id": "6"
+	}
+]
