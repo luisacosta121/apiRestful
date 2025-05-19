@@ -15,14 +15,14 @@ class Controlador {
 
   guardarProducto = async (req, res) => {
     try {
-const producto = req.body;
-    const productoGuardado = await this.#servicio.guardarProducto(producto);
-    res.json(productoGuardado);
-    } catch(error){
+      const producto = req.body;
+      if(!Object.keys(producto).length) throw new Error('El producto está vacio')
+      const productoGuardado = await this.#servicio.guardarProducto(producto);
+      res.json(productoGuardado);
+    } catch (error) {
       //res.status(500).json({error: error.details[0].message})
-      res.status(500).json({error: error.message})
+      res.status(500).json({ error: error.message });
     }
-    
   };
 
   actualizarProducto = async (req, res) => {
@@ -43,6 +43,12 @@ const producto = req.body;
     res
       .status(productoEliminado ? 200 : 404)
       .json(productoEliminado ? productoEliminado : {});
+  };
+
+  obtenerEstadisticas = async (req, res) => {
+    const { opcion } = req.params;
+    const estadisticas = await this.#servicio.obtenerEstadisticas(opcion);
+    res.json({estadisticas});
   };
 }
 

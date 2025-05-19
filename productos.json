@@ -1,38 +1,56 @@
 [
 	{
-		"nombre": "LECHUGA",
-		"precio": "10",
-		"stock": "2",
-		"id": "1"
+		"id": "2",
+		"nombre": "Teclado Redragon Kumara",
+		"precio": 26500,
+		"stock": 120
 	},
 	{
-		"nombre": "PAPA",
-		"precio": "3",
-		"stock": "99",
-		"id": "2"
+		"id": "3",
+		"nombre": "Monitor Samsung 24\"",
+		"precio": 49900,
+		"stock": 45
 	},
 	{
-		"nombre": "AVION",
-		"precio": "55",
-		"stock": "4",
-		"id": "3"
+		"id": "4",
+		"nombre": "Memoria RAM 16GB DDR4",
+		"precio": 38500,
+		"stock": 60
 	},
 	{
-		"nombre": "CAMION",
-		"precio": "55",
-		"stock": "4",
-		"id": "4"
+		"id": "5",
+		"nombre": "Disco SSD 1TB Kingston",
+		"precio": 42500,
+		"stock": 75
 	},
 	{
-		"nombre": "SANDIA",
-		"precio": "55",
-		"stock": "4",
-		"id": "5"
+		"id": "6",
+		"nombre": "Gabinete Aerocool Bolt",
+		"precio": 31000,
+		"stock": 50
 	},
 	{
-		"nombre": "HELICOPTERO",
-		"precio": "333",
-		"stock": "89",
-		"id": "6"
+		"id": "7",
+		"nombre": "Fuente EVGA 600W",
+		"precio": 34000,
+		"stock": 90
+	},
+	{
+		"id": "8",
+		"nombre": "Cooler CPU Hyper 212",
+		"precio": 29500,
+		"stock": 65
+	},
+	{
+		"id": "9",
+		"nombre": "Placa Madre MSI B550M",
+		"precio": 49800,
+		"stock": 30
+	},
+	{
+		"id": "10",
+		"nombre": "Auriculares Corsair HS35",
+		"precio": 23000,
+		"stock": 105
 	}
 ]

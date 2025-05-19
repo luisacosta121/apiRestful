@@ -18,6 +18,9 @@ class Router {
     router.put("/:id", this.#controlador.actualizarProducto);
     router.delete("/:id", this.#controlador.borrarProducto);
 
+    //ACA SE COMIENZAN LOS CALCULOS
+    router.get('/estadisticas/:opcion', this.#controlador.obtenerEstadisticas)
+
     return router;
   }
 }

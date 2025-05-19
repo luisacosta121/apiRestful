@@ -1,5 +1,6 @@
 //https://joi.dev/
 //https://joi.dev/api/?v=17.13.3
+//LA VALIDACION CON JOI SE HACE EN EL SERVICIO
 import Joi from "joi";
 
 export const validar = (producto) => {

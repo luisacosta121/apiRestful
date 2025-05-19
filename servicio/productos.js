@@ -39,6 +39,26 @@ class Servicio {
     const productoEliminado = await this.#model.borrarProducto(id);
     return productoEliminado;
   };
+
+  obtenerEstadisticas = async opcion => {
+    const productos = await this.#model.obtenerProductos()
+    switch(opcion){
+      case 'cantidad':
+        return { cantidad: productos.length }
+
+      case 'avg-precio':
+        return { 'precio promedio': +(productos.reduce((acc, p) => acc + p.precio, 0) / productos.length).toFixed(2) }
+
+      case 'min-precio':
+        return { 'precio minimo': +Math.min(...productos.map(p => p.precio)).toFixed(2) }
+
+      case 'max-precio':
+        return { 'precio maximo': +Math.max(...productos.map(p => p.precio)).toFixed(2) }
+
+      default:
+          return { error: `opcion estadistica "${opcion}" no soportada`}
+    }
+  }
 }
 
 export default Servicio;
